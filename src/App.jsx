@@ -3,7 +3,7 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Projects from "./pages/Projects"
 import Whoops404 from "./pages/Whoops404"
-import Header from "./components/Header"
+import Header from "./components/Header/Header"
 
 
 function App() {

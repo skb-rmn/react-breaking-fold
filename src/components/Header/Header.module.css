@@ -1,0 +1,50 @@
+.nav{
+    background-color: black;
+    color: rgb(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.siteTitle{
+    font-size: 2rem;    
+}
+.siteTitle:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.5s ease;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.25rem;
+}
+
+.nav li{
+    font-size: 1rem;
+    transition: 0.2s ease;
+}
+
+.nav li:hover{
+    color: rgb(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    transition: 0.3s ease;
+}
+
+.nav li:active{
+    color: rgb(255, 255, 255);
+}
