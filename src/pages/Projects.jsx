@@ -1,9 +1,6 @@
-import Header from "../components/Header";
-
 function Projects(){
     return(
         <div>
-            <Header />
             <h1>Projects</h1>
         </div>
     );
