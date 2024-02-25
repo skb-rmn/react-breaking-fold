@@ -10,8 +10,8 @@ function App() {
 
   return (
     <div>
-      <Header />
       <Router>
+        <Header />
         <Routes>
           <Route index element={<Home/>} />
           <Route path="/home" element={<Home/>} />
