@@ -1,7 +1,11 @@
+import Banner from "../components/Banner";
+import Description from "../components/Description";
+
 function Home(){
     return(
         <div>
-            <h1>Home</h1>
+            <Banner />
+            <Description />
         </div>
     );
 }
