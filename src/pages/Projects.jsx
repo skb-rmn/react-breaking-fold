@@ -1,12 +1,15 @@
+import {Link} from 'react-router-dom';
 import ProjectCard from "../components/ProjectCard";
+import DataProjects from '../DataSample';
 
 function Projects(){
-    const projects = [{title: "ASD", }, {title: 'QAZ', description: 'Ill baba'},]
     return(
         <div>
             <h1>Projects</h1>
             <ul>
-                {projects.map((project,index)=> <li key={index}> <ProjectCard title={project.title} description={project.description} image={project.image}/> </li> )}
+                { DataProjects.map((project,index)=> <li key={index}> <Link to= {'/projects/'+ index}>
+                    <ProjectCard title={project.title} description={project.description} image={project.image}/>
+                </Link> </li> )}
             </ul>
         </div>
     );

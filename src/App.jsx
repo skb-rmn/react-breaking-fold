@@ -4,6 +4,7 @@ import About from "./pages/About"
 import Projects from "./pages/Projects"
 import Whoops404 from "./pages/Whoops404"
 import Header from "./components/Header/Header"
+import Project from "./components/Project"
 
 
 function App() {
@@ -16,7 +17,11 @@ function App() {
           <Route index element={<Home/>} />
           <Route path="/home" element={<Home/>} />
           <Route path="/about" element={<About/>} />
-          <Route path="/projects" element={<Projects/>} />
+          {/* <Route path="/projects" element={<Projects/>} /> */}
+          <Route path="/projects">
+          <Route index element={<Projects />} />
+            <Route path=":id" element={<Project />} />
+          </Route>
           <Route path="*" element={<Whoops404/>} />
         </Routes>
       </Router>
