@@ -5,6 +5,7 @@ import Projects from "./pages/Projects"
 import Whoops404 from "./pages/Whoops404"
 import Header from "./components/Header/Header"
 import Project from "./components/Project"
+import AnimatedBG from "./components/AnimatedBG/AnimatedBG"
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="*" element={<Whoops404/>} />
         </Routes>
       </Router>
+      <AnimatedBG />
     </div>
   )
 }
